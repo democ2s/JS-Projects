@@ -1,4 +1,12 @@
 //window.location.href
+const repoName = "JS-Projects";
+const baseUrl = window.location.origin + `/${repoName}/`;
+let allTagA = document.querySelectorAll(".project a");
 
-const baseUrl = window.location.origin + "/JS-Projects/";
-document.getElementById("project1").href = baseUrl + "Project_1/index.html";
+for (let i = 0; i < allTagA.length; i++) {
+  //console.log(allTagA[i].id);
+  allTagA[i].addEventListener("mouseover", function (event) {
+    allTagA[i].href = baseUrl + `${allTagA[i].id}/index.html`;
+    console.log(allTagA[i].href);
+  });
+}
