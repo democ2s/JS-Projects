@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1 DOM Manipulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="navbar">
+        <h1>DOM Manipulation</h1>
+        <h1>Project 1</h1>
+      </div>
+    </div>
+    <div class="main-area">
+      <section class="ex1">
+        <h3>1.Change Background Color</h3>
+        <div class="box">
+          This is a div. Background color will be changed by clicking the button
+        </div>
+        <button onclick="chngBgColor()">Change Color</button>
+        <button onclick="unDoBgColor()">Undo Color</button>
+      </section>
+      <section class="ex2">
+        <h3>2.Create new element</h3>
+        <div class="box">
+          Below is a unordered list. use buttons to add and remove new added
+          list items.
+        </div>
+        <ul id="ol">
+          <li class="static-added">Static Item</li>
+        </ul>
+        <button onclick="createLstItems()">Create Item</button>
+        <button onclick="removeLstItems()">Remove Item</button>
+      </section>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
