@@ -1,7 +1,7 @@
 //window.location.href
 let repoName = "";
 let baseUrl = "";
-let deploy = "local"; // github local
+let deploy = "github"; // github local
 
 if (deploy === "local") {
   baseUrl = window.location.origin + `/`;
