@@ -20,6 +20,10 @@ body {
   float: right;
   font-family: "Mina", sans-serif;
 }
+.navbar h1:nth-child(2) a {
+  text-decoration: none;
+  color: red;
+}
 .main-area {
   display: flex;
   flex-wrap: wrap;
@@ -36,4 +40,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 24px;
+}
+.project a {
+  text-decoration: none;
 }

@@ -56,3 +56,8 @@ body {
   padding: 10px;
   box-shadow: 5px;
 }
+
+.ex2 .box {
+  border-radius: 15px;
+  font-family: "Mina", sans-serif;
+}
