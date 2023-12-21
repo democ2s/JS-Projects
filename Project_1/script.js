@@ -62,3 +62,13 @@ function toggleOl() {
   let olist = document.getElementById("ol-toggle");
   olist.style.display = olist.style.display === "block" ? "none" : "block";
 }
+
+function switchParent() {
+  //ol-toggle2
+  let oList = document.getElementById("ol-toggle2");
+  let parent1 = document.getElementsByClassName("parent1")[0];
+  let parent2 = document.getElementsByClassName("parent2")[0];
+  oList.parentNode.className === "parent1"
+    ? parent2.appendChild(oList)
+    : parent1.appendChild(oList);
+}

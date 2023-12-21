@@ -72,3 +72,14 @@ body {
 .highLight-Yellow {
   background-color: yellow;
 }
+
+.project a {
+  text-decoration: none;
+}
+
+.parent1 h2 {
+  background-color: aquamarine;
+}
+.parent2 {
+  background-color: bisque;
+}
