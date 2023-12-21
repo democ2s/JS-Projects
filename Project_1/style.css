@@ -33,6 +33,14 @@ body {
   font-size: 40px;
 }
 
+.ex {
+  border: 1px solid black;
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-shadow: 5px;
+}
 .ex1 {
   border: 1px solid black;
   margin: 5px;
@@ -60,4 +68,7 @@ body {
 .ex2 .box {
   border-radius: 15px;
   font-family: "Mina", sans-serif;
+}
+.highLight-Yellow {
+  background-color: yellow;
 }

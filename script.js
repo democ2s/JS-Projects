@@ -1,6 +1,15 @@
 //window.location.href
-const repoName = "JS-Projects";
-const baseUrl = window.location.origin + `/${repoName}/`;
+let repoName = "";
+let baseUrl = "";
+let deploy = "local"; // github local
+
+if (deploy === "local") {
+  baseUrl = window.location.origin + `/`;
+} else {
+  repoName = "JS-Projects";
+  baseUrl = window.location.origin + `/${repoName}/`;
+}
+
 let allTagA = document.querySelectorAll(".project a");
 
 for (let i = 0; i < allTagA.length; i++) {
