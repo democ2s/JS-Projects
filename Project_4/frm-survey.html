@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/frm-survey.css" />
+  </head>
+  <body>
+    <h2>HTML form - reading element values</h2>
+    <fieldset>
+      <legend>Option 2- Survey Form</legend>
+      <form method="GET" id="frm2">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <p>Is this first time you are using our products?</p>
+        <input type="radio" name="first-cust" id="first-cust" value="Yes" />
+        <label for="first-cust">Yes</label>
+        <input type="radio" name="first-cust" id="first-cust" value="No" />
+        <label for="first-cust">No</label>
+        <br />
+        <p>Would you recommend our product to your friends and family?</p>
+        <input type="radio" name="recom" id="recom" value="Yes" />
+        <label for="recom">Yes</label>
+        <input type="radio" name="recom" id="recom" value="No" />
+        <label for="recom">No</label>
+        <br />
+        <p>How satisfied are you with our survey?</p>
+        <input type="radio" name="satisfy" id="satisfy" value="satisfied" />
+        <label for="satisfy">Satisfied</label>
+        <input type="radio" name="satisfy" id="satisfy" value="undecided" />
+        <label for="satisfy">Undecided</label>
+        <input type="radio" name="satisfy" id="satisfy" value="unsatisfied" />
+        <label for="satisfy">Not satisfied</label>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+      <h3 id="summary"></h3>
+    </fieldset>
+  </body>
+  <script src="scripts/frm-survey.js"></script>
+</html>
